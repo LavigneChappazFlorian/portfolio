@@ -20,54 +20,6 @@ body {
     margin: 0;
 }
 
-header {
-    margin: 1% 0;
-    padding-left: 50%;
-    padding-bottom: 2%;
-    background-color: #f5f5f5;
-}
-
-nav {
-    text-align: center;
-    margin: 2rem;
-    position: fixed;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    padding: 0 1.5rem;
-}
-
-nav a {
-    color: #999999;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    font-weight: bold;
-    color: #707070;
-}
-
-.link-contact:hover {
-    font-weight: bold;
-    color: #f5f5f5;
-}
-
-.link-contact {
-    border: 3px solid #707070;
-    border-radius: 3px;
-    padding: 10px;
-    background-color: #707070;
-    color: #f5f5f5;
-}
-
 .grid {
     margin: 0 10%;
 }
@@ -76,7 +28,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -86,7 +38,8 @@ nav a:hover {
     margin-bottom: 0;
 }
 
-.presentation h1 {
+
+.presentation h1, h2 {
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -98,6 +51,28 @@ nav a:hover {
 }
 
 .about {
-    background-color: #999999;
+    margin: 10%;
+    height: 100vh;
 }
+
+.about hr {
+    color: #000000;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+}
+
+.grid-posters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about p {
+    width: 60%;
+    line-height: 1.25rem;
+}
+
+
+
 
