@@ -230,6 +230,10 @@ footer {
         height: 100vh;
     }
 
+    .about p {
+        font-size: 0.75rem;
+    }
+
     .diplomes {
         margin: 10% 5% 0 5%;
         padding: 0;
@@ -247,7 +251,7 @@ footer {
     .grid-posters {
         display: grid;
         grid-template-columns: 1fr;
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 
     textarea {
