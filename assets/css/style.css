@@ -112,7 +112,7 @@ h2 {
     font-weight: bold;
 }
 
-.legend-style {
+.formulaire-style {
     font-size: 1.15rem;
     font-weight: bold;
 }
@@ -150,3 +150,112 @@ footer {
     justify-content: center;
 }
 
+@media (max-width: 1300px) and (min-width: 1110px) {
+    .grid {
+        margin: 0 5%;
+    }
+    
+    .about, .contact {
+        margin: 5%;
+    }
+
+    .diplomes {
+        margin: 10% 5% 0 5%;
+        padding: 0;
+    }
+    
+}
+
+@media (max-width: 1109.99px) and (min-width: 900px) {
+    .grid {
+        margin: 1%;
+    }
+    
+    .about, .contact {
+        margin: 1%;
+    }
+
+    .diplomes {
+        margin: 10% 1% 0 1%;
+        padding: 0;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-posters {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 899.99px) and (min-width: 600px) {
+    .grid {
+        margin: 1%;
+    }
+    
+    .about, .contact {
+        margin: 1%;
+    }
+
+    .diplomes {
+        margin: 10% 1% 0 1%;
+        padding: 0;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-posters {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: calc(0.5rem + 0.5vh);
+    }
+
+}
+
+@media (max-width: 599px){
+    .grid {
+        margin: 1%;
+    }
+    
+    .about, .contact {
+        margin: 1%;
+    }
+
+    .diplomes {
+        margin: 10% 1% 0 1%;
+        padding: 0;
+    }
+
+    .diplomes img {
+        width: 75%;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-posters {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 0.5rem;
+    }
+
+    textarea {
+        height: 20%;
+        width: 40%;
+    }
+
+    .contact legend, span, label, p, a {
+        font-size: 0.75rem;
+        font-weight: 100;
+        margin-top: 0;
+    }
+
+}
