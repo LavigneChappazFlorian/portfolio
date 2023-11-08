@@ -225,17 +225,19 @@ footer {
     
     .about, .contact {
         margin: 1%;
+        height: 100vh;
     }
 
     .diplomes {
         margin: 10% 1% 0 1%;
         padding: 0;
+        height: 100vh;
     }
 
     .diplomes img {
         width: 75%;
     }
-
+    
     .contact-grid {
         display: grid;
         grid-template-columns: 1fr;
