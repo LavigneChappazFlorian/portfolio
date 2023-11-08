@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    
     <title>Florian Lavigne | Portfolio</title>
     <meta name="description" content="Florian Lavigne is a UX/UI designer &amp; front-end <em>web developer</em> from France with an interest for AI">
 </head>
@@ -23,6 +24,7 @@
             </section>
         </div>
         </div>
+
         <div class="about" id="about">
             <hr>
             <h2>A propos</h2>
@@ -52,22 +54,77 @@
             </section>
             </div>
         </div>
+
         <div class="diplomes" id="diplomes">
             <hr>
             <h2>Mes dîplomes</h2>
             <div class="diplomes-img grid-posters">
-            <section>
+            <section class="brevet">
                 <img src="assets/img/brevet.jpg" alt="Diplôme du brevet des collège">
                 <h3>Diplôme du Brevet des collèges</h3>
             </section>
 
-            <section>
+            <section class="bac">
                 <img src="assets/img/bac.jpg" alt="Diplôme du Baccalauréat">
-                <h3>Diplôme du Baccalauréat</h3>
+                <h3>Diplôme du Baccalauréat Technologique</h3>
             </section>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <hr>
+            <h2>Contact</h2>
+            <div class="contact-grid">
+            <section>
+                <p><span>Email :</span><br>
+                florian.lavigne.chappaz@gmail.com</p><br>
+                <p><span>Réseaux Sociaux :</span><br>
+                <a href="https://instagram.com/flrlvg?ighid=MzMyNGUyNmU2YQ%3D%3D&utm_souce=qr" target="_blank">Instagram</a>
+                <a href="https://linkedin.com/in/florian-lavigne-chappaz" target="_blank">Linkedin</a></p>
+
+            </section>
+
+            <section class="formulaire">
+            <form action="#" method="POST">
+                <legend class="legend-style">Identité :</legend>
+                <br>
+            <section>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Homme</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Femme</label>
+            </section>
+            <br>
+            <div>
+                <label for="lastname">Nom :</label>
+                <input type="text"id="lastname" name="lastname" placeholder="Ecrire votre nom ici">
+            </div>
+            <br>
+            <div>
+            <label for="firstname">Prénom :</label>
+            <input type="text"id="firstname" name="firstname" placeholder="Ecrire votre prénom ici">
+            </div>
+            <br>
+            <div>
+            <label for="mail">Adresse mail :</label>
+            <input type="email" id="mail" name="mail" placeholder="Entrer votre mail ici">
+            </div>
+            </section>
+
+            <section>
+                <legend class="legend-style">Votre message :</legend>
+                <br>
+                <textarea name="message" id="message" cols="50" rows="7" placeholder="Ecrire votre message ici"></textarea>
+                <br>
+                <button type="submit" value="Envoyer">Envoyer</button>
+            </section>
+            </form>
             </div>
         </div>
     </main>
 
+    <footer>
+        <p>&#169; Site réalisé par <strong>Florian Lavigne</strong></p>
+    </footer>
 </body>
 </html>

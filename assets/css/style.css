@@ -50,7 +50,7 @@ body {
     padding-top: 0;
 }
 
-.about, .diplomes {
+.about, .contact {
     margin: 10%;
     height: 70vh;
 }
@@ -82,8 +82,71 @@ h2 {
     margin-top: 1%;
 }
 
-.diplomes img:hover {
-    
+.diplomes {
+    margin: 10% 10% 0 10%;
+    padding: 0;
 }
 
+.contact {
+    margin-bottom: 0;
+}
+
+.contact p {
+    font-size: 1.15rem;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.contact span {
+    font-weight: bold;
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #000000;
+    font-weight: 500;
+}
+
+.contact a:hover {
+    font-weight: bold;
+}
+
+.legend-style {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.formulaire label {
+    font-weight: 500;
+}
+
+.formulaire input, textarea {
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 5px;
+}
+button {
+    cursor: pointer;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    padding: 7px 20px 7px 20px;
+    margin-top: 10px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    background-color: #707070;
+    color: #f5f5f5;
+    height: 10vh;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
