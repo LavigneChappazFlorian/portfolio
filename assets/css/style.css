@@ -173,6 +173,7 @@ footer {
     
     .about, .contact {
         margin: 1%;
+        height: 100vh;
     }
 
     .diplomes {
@@ -197,11 +198,12 @@ footer {
     }
     
     .about, .contact {
-        margin: 1%;
+        margin: 5%;
+        height: 100vh;
     }
 
     .diplomes {
-        margin: 10% 1% 0 1%;
+        margin: 10% 5% 0 5%;
         padding: 0;
     }
 
@@ -224,20 +226,19 @@ footer {
     }
     
     .about, .contact {
-        margin: 1%;
+        margin: 5%;
         height: 100vh;
     }
 
     .diplomes {
-        margin: 10% 1% 0 1%;
+        margin: 10% 5% 0 5%;
         padding: 0;
-        height: 100vh;
     }
 
     .diplomes img {
         width: 75%;
     }
-    
+
     .contact-grid {
         display: grid;
         grid-template-columns: 1fr;
