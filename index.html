@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <title>Florian Lavigne | Portfolio</title>
     <meta name="description"
         content="Florian Lavigne is a UX/UI designer &amp; front-end <em>web developer</em> from France with an interest for AI">
@@ -17,124 +15,24 @@
 
 <body>
 
-    <main>
-        <div class="grid" id="home">
-            <section class="presentation">
-                <h1>Florian Lavigne</h1>
-                <a href="#about" id="pointer">&#9759;</a>
-            </section>
-        </div>
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Florian Lavigne Chappaz</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="">Compétences</a></li>
+                <li><a href="">Centres d'intérêt</a></li>
+                <li><a href="">Projets</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="about" id="about">
-            <hr>
-            <h2>A propos</h2>
-            <div class="grid-posters">
-                <section class="poster1">
-                    <h3>Qui suis-je ?</h3>
-                    <p>Je m'appelle <strong>Florian Lavigne</strong> et j'ai 18 ans.<br>
-                        Je suis un individu passionné par l'apprentissage et la réfléxion.
-                        Avec une solide formation en informatique et une immense curiosité, j'aime explorer de nouveaux
-                        domaines
-                        et trouver des solutions innovantes.
-                        Mon approche est axée sur la créativité, la collaboration et l'amélioration continue.</p>
-                </section>
+    <!-- Introduction -->
 
-                <section class="poster2">
-                    <h3>Mes passions</h3>
-                    <p>Mes passions définissent ma vie.<br>
-                        Le sport, la musique et la technologie sont mes sources d'inspiration.
-                        Se dépassser mentalement et physiquement grâce au sport, s'apaiser avec la musique et développer
-                        ma créativité à l'aide de la technologie.<br>
-                        Ces passions m'animent et enrichissent mon quotidien.</p>
-                </section>
+    <!-- Section "À propos" -->
 
-                <section class="poster3">
-                    <h3>Moi & le Web</h3>
-                    <p>Le web est ma passion. Chaque clic ouvre une porte vers un monde infini de connaissances, de
-                        communication et de créativité.
-                        J'explore, j'apprends, je crée, et je me connecte avec le monde entier grâce à cet univers
-                        numérique en constante évolution.
-                        C'est là que je trouve inspiration, opportunité et un espace pour m'exprimer. Le web est bien
-                        plus qu'une simple toile, c'est le tissu de ma passion.</p>
-                </section>
-            </div>
-        </div>
-
-        <div class="diplomes" id="diplomes">
-            <hr>
-            <h2>Mes dîplomes</h2>
-            <div class="diplomes-img grid-posters">
-                <section class="brevet">
-                    <img src="assets/img/brevet.jpg" alt="Diplôme du brevet des collège">
-                    <h3>Diplôme du Brevet des collèges</h3>
-                </section>
-
-                <section class="bac">
-                    <img src="assets/img/bac.jpg" alt="Diplôme du Baccalauréat">
-                    <h3>Diplôme du Baccalauréat Technologique</h3>
-                </section>
-            </div>
-        </div>
-
-        <div class="contact" id="contact">
-            <hr>
-            <h2>Contact</h2>
-            <div class="contact-grid">
-                <section>
-                    <p><span>Email :</span><br>
-                        florian.lavigne.chappaz@gmail.com</p><br>
-                    <p><span>Réseaux Sociaux :</span><br>
-                        <a href="https://instagram.com/flrlvg?ighid=MzMyNGUyNmU2YQ%3D%3D&utm_souce=qr"
-                            target="_blank">Instagram</a>
-                        <a href="https://linkedin.com/in/florian-lavigne-chappaz" target="_blank">Linkedin</a>
-                    </p>
-
-                </section>
-
-                <section class="formulaire">
-                    <legend class="formulaire-style">Identité :</legend>
-                        <br>
-                    <form action="#" method="POST">
-                        <section>
-                            <input type="radio" id="female" name="gender">
-                            <label for="female">Homme</label>
-                            <input type="radio" id="male" name="gender">
-                            <label for="male">Femme</label>
-                        </section>
-                        <br>
-                        <div>
-                            <label for="lastname">Nom :</label>
-                            <input type="text" id="lastname" name="lastname" placeholder="Ecrire votre nom ici">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="firstname">Prénom :</label>
-                            <input type="text" id="firstname" name="firstname" placeholder="Ecrire votre prénom ici">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="mail">Adresse mail :</label>
-                            <input type="email" id="mail" name="mail" placeholder="Entrer votre mail ici">
-                        </div>
-                    </form>
-                </section>
-                <section>
-                    <legend class="formulaire-style">Votre message :</legend>
-                        <br>
-                    <form action="#" method="POST">
-                        <textarea name="message" id="message" cols="50" rows="7"
-                            placeholder="Ecrire votre message ici"></textarea>
-                        <br>
-                    </form>
-                    <button type="submit" value="Envoyer">Envoyer</button>
-                </section>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&#169; Site réalisé par <strong>Florian Lavigne</strong></p>
-    </footer>
+    
 </body>
 
 </html>
