@@ -46,6 +46,49 @@ body {
     height: 100vh;
 }
 
+.profil h2 {
+    padding-top: 10%;
+    padding-left : 20%;
+    font-size: 1.5rem;
+}
+
+.profil p {
+    line-height: 2rem;
+    padding-top: 2%;
+    padding-left: 20%;
+    font-size: 1.25rem;
+}
+
+.profil nav {
+    padding-left: 16%;
+    padding-top: 3%;
+}
+
+.profil a {
+    margin-left: 5%;
+    padding: 1%;
+    text-decoration: none;
+    font-weight: 600;
+    color: #010101;
+    font-size: 1.25rem;
+    border: 2px solid #010101;
+    border-radius: 5px;
+}
+
+.profil a:hover {
+    background-color: #010101;
+    color: #F0F0F0;
+    transition: 1s;
+    padding: 1% 2%;
+}
+
+.profil img {
+    margin-top: 8%;
+    margin-left: 20%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,13 +129,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.part1 p, .part2 p {
+.part1 p, .part2 p{
     padding-top: 1%;
     padding-left: 20%;
     font-size: 1.25rem;
 }
 
-.part1 span, footer span {
+.part1 span, .profil span, .langues span, footer span {
     font-weight: 600;
 }
 
