@@ -179,18 +179,136 @@ footer p {
     font-size: 1.25rem;
 }
 
-/* .retour a {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: #F0F0F0;
-    font-size: 3rem;
+@media (max-width: 1159.99px) {
+    .profil h2, .contact-localisation h2, .part1 h2, .part2 h2 {
+        padding-left: 5%;
+    }
+
+    .part4 h2 {
+        padding-left: 3%;
+    }
+
+    .profil nav {
+        padding-top: 5%;
+        padding-left: 0;
+    }
+
+    .contact-localisation p, .part1 p, .part2 p, .part3 p, .profil p {
+        padding-left: 5%;
+    }
+
+    .profil img {
+        margin-left: 5%;
+    }
+
+    .part4 img {
+        padding-left: 0;
+    }
 }
 
-.retour a:hover {
-    font-size: 3.5rem;
-    transition: 1s;
-} */
+@media (max-width: 979.99px) {
+    .profil, .grid1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
+    .profil img {
+        height: 200px;
+    }
+
+    .profil h2, .contact-localisation h2, .part1 h2, .part2 h2 {
+        padding-left: 3%;
+        font-size: 1.5rem;
+    }
+
+    .part4 h2 {
+        padding-left: 3%;
+    }
+
+    .profil nav {
+        padding-top: 5%;
+        padding-left: 0;
+    }
+
+    .contact-localisation {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-localisation h2{
+        padding-top: 2%;
+    }
+
+    .contact-localisation p, .part1 p, .part2 p, .part3 p, .profil p {
+        padding-left: 3%;
+        font-size: 1rem;
+    }
+
+    .profil img {
+        margin-left: 5%;
+    }
+
+    .part4 img {
+        padding-left: 5%;
+    }
+
+    .mockup {
+        padding-bottom: 5%;
+    }
+}
+
+@media (max-width: 549.99px) {
+    .profil, .grid1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .profil img {
+        height: 150px;
+    }
+
+    .profil h2, .contact-localisation h2, .part1 h2, .part2 h2 {
+        padding-left: 3%;
+        font-size: 1.5rem;
+    }
+
+    .part4 h2 {
+        padding-left: 3%;
+    }
+
+    .profil nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 5%;
+        padding-left: 0;
+    }
+
+    .contact-localisation {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-localisation h2{
+        padding-top: 2%;
+    }
+
+    .contact-localisation p, .part1 p, .part2 p, .part3 p, .profil p {
+        padding-left: 3%;
+        font-size: 1rem;
+    }
+
+    .profil img {
+        margin-left: 5%;
+    }
+
+    .part4 img {
+        padding-left: 1%;
+    }
+
+    .mockup {
+        padding-bottom: 5%;
+        width: 300px;
+    }
+}
 
 
