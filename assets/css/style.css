@@ -258,6 +258,15 @@ footer p {
 }
 
 @media (max-width: 549.99px) {
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro a {
+        font-size: 3rem;
+    }
+
     .profil, .grid1 {
         display: grid;
         grid-template-columns: 1fr;
@@ -281,6 +290,17 @@ footer p {
         grid-template-columns: 1fr;
         padding-top: 5%;
         padding-left: 0;
+    }
+
+    .profil a {
+        margin-left: 1%;
+        padding-right: 0;
+        padding-top: 2%;
+        margin-top: 2%;
+    }
+
+    .profil img {
+        visibility: hidden;
     }
 
     .contact-localisation {
