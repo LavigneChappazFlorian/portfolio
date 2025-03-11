@@ -36,7 +36,7 @@
 			],
 			picture: [
 				{
-					src: 'src/assets/img/samu-social-paris/illustration.png',
+					src: '/img/samu-social-paris/illustration.png',
 					alt: 'Page Info - Samu Social de Paris'
 				}
 			]
@@ -55,7 +55,7 @@
 			],
 			picture: [
 				{
-					src: 'src/assets/img/sass-portfolio/sass.png',
+					src: '/img/sass-portfolio/sass.png',
 					alt: 'Logo Sass'
 				}
 			]
@@ -74,7 +74,7 @@
 			],
 			picture: [
 				{
-					src: 'src/assets/img/planning-symfony/whats-news.webp',
+					src: '/img/planning-symfony/whats-news.webp',
 					alt: "Photo Illustration What's News"
 				}
 			]
@@ -93,7 +93,7 @@
 			],
 			picture: [
 				{
-					src: 'src/assets/img/magazine-nomade/magazine.png',
+					src: '/img/magazine-nomade/magazine.png',
 					alt: 'Photo de Florian'
 				}
 			]
@@ -113,7 +113,7 @@
 		},
 		{
 			icon: 'mdi:user',
-			link: 'src/assets/cv/lavigne-chappaz-florian-cv-stage-alternance.pdf',
+			link: '/cv/lavigne-chappaz-florian-cv-stage-alternance.pdf',
 			name: 'CV'
 		},
 		{
@@ -190,7 +190,7 @@
 				</div>
 			</div>
 			<div class="about__skills__right">
-				<img src="/src/assets/img/florian.png" alt="Florian Lavigne Chappaz" />
+				<img src="/img/florian.png" alt="Florian Lavigne Chappaz" />
 			</div>
 		</div>
 		<div class="about__works">

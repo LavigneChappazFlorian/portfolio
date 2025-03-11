@@ -19,6 +19,7 @@
 </svelte:head>
 
 <header>
+	<h1>Responsive en cours de création</h1>
 	<nav class="nav">
 		<div class="nav__left">
 			<span>
@@ -43,6 +44,16 @@
 
 <style lang="scss">
 	header {
+		h1 {
+			padding: 1rem;
+			color: $light-grey;
+			font-family: "Open Sans";
+			font-size: 1rem;
+			font-weight: 400;
+			text-align: center;
+			border-bottom: 1px solid $light-grey;
+		}
+
 		& .nav {
 			margin: 1.5rem;
 			display: flex;
