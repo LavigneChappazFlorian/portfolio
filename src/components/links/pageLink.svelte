@@ -53,4 +53,21 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 1049px) {
+		.link {
+			&__text a, 
+			&__arrow a {
+				font-size: 1rem;
+			}
+
+			&__text a {
+				padding: .5rem 5rem;
+			}
+
+			&__arrow a {
+				padding: .5rem .75rem;
+			}
+		}
+	}	
 </style>

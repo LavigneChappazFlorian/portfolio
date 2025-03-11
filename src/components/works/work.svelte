@@ -10,10 +10,8 @@
 		<span>{years}</span>
 		<small>{time}</small>
 	</div>
-	<div class="work__center">
-		<span>{compagny}</span>
-	</div>
 	<div class="work__right">
+		<span>{compagny}</span>
 		<span>{role}</span>
 	</div>
 </div>
@@ -47,25 +45,30 @@
 			}
 		}
 
-		&__center {
+		&__right {
 			flex: 1;
-			text-align: left;
+			display: flex;
+			justify-content: space-between;
 
-			span {
+			span:nth-child(1) {
 				color: $light-grey;
 				font-family: 'Open Sans';
 				font-size: 1.25rem;
 			}
-		}
 
-		&__right {
-			width: 30%;
-			text-align: right;
-
-			span {
+			span:nth-child(2) {
 				font-size: 1.25rem;
 				color: $light-grey;
 				font-family: 'Fira Code';
+			}
+		}
+	}
+
+	@media screen and (max-width: 599px) {
+		.work {
+			&__right {
+				flex-direction: column;
+				gap: 1rem;
 			}
 		}
 	}

@@ -1,6 +1,10 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import { Hamburger } from 'svelte-hamburgers';
 	import '../lib/scss/main.scss';
+	import { fly } from 'svelte/transition';
+
+	let open = $state(false);
 
 	type Props = {
 		children: Snippet;
@@ -19,7 +23,6 @@
 </svelte:head>
 
 <header>
-	<h1>Responsive en cours de création</h1>
 	<nav class="nav">
 		<div class="nav__left">
 			<span>
@@ -37,6 +40,16 @@
 			<span id="en">En</span>
 			<span class="isActive" id="fr">Fr</span>
 		</div>
+		<div class="nav__menu">
+			<Hamburger bind:open ariaControls="nav" type="collapse" --color="white" />
+			{#if open}
+				<ul id="nav" class="nav__menu__open" transition:fly={{ y: -15 }}>
+					<li><a href="#about" aria-label="about">A propos</a></li>
+					<li><a href="#projects" aria-label="projects">Projets</a></li>
+					<li><a href="#contact" aria-label="contact">Contact</a></li>
+				</ul>
+			{/if}
+		</div>
 	</nav>
 </header>
 
@@ -44,16 +57,6 @@
 
 <style lang="scss">
 	header {
-		h1 {
-			padding: 1rem;
-			color: $light-grey;
-			font-family: "Open Sans";
-			font-size: 1rem;
-			font-weight: 400;
-			text-align: center;
-			border-bottom: 1px solid $light-grey;
-		}
-
 		& .nav {
 			margin: 1.5rem;
 			display: flex;
@@ -109,6 +112,42 @@
 
 				span:hover {
 					border-bottom: 1px solid $light;
+				}
+			}
+
+			&__menu {
+				display: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 599px) {
+		header {
+			& .nav {
+				&__center,
+				&__right {
+					display: none;
+				}
+
+				&__menu {
+					z-index: 1;
+					display: flex;
+					align-items: center;
+
+					ul {
+						list-style: none;
+						display: flex;
+						flex-direction: column;
+						gap: 1rem;
+
+						li {
+							a {
+								text-decoration: none;
+								font-size: 1rem;
+								color: $light;
+							}
+						}
+					}
 				}
 			}
 		}

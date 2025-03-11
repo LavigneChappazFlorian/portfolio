@@ -357,7 +357,7 @@
 				&__right {
 					display: flex;
 					align-items: center;
-					justify-content: center;
+					justify-content: end;
 
 					img {
 						border-radius: 2rem;
@@ -462,6 +462,166 @@
 				align-items: center;
 				justify-content: center;
 				gap: 2rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1299px) {
+		main {
+			.home {
+				&__presentation {
+					flex-direction: row;
+					justify-content: center;
+					gap: 2rem;
+
+					h1 {
+						font-size: 5rem;
+					}
+
+					&__top {
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						gap: 0.5rem;
+					}
+
+					&__bottom {
+						p {
+							max-width: 100%;
+						}
+
+						h1 {
+							display: none;
+						}
+					}
+				}
+
+				&__link {
+					gap: 1rem;
+				}
+			}
+
+			& .about {
+				&__skills {
+					flex-direction: column;
+
+					&__right {
+						display: none;
+					}
+				}
+			}
+
+			& .contact {
+				&__content {
+					&__left {
+						h3 {
+							font-size: 5rem;
+						}
+					}
+				}
+
+				&__link {
+					gap: 1rem;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1049px) {
+		main {
+			& .home {
+				&__presentation {
+					flex-direction: column;
+
+					h1 {
+						font-size: 3rem;
+					}
+
+					&__top {
+						flex-direction: row;
+						gap: 1rem;
+					}
+				}
+			}
+
+			& .contact {
+				&__content {
+					flex-direction: column;
+					gap: 1rem;
+
+					&__left {
+						justify-content: center;
+					}
+
+					&__right {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 849px) {
+		main {
+			& .home {
+				margin: 3rem;
+
+				&__presentation {
+					flex-direction: column;
+
+					&__top {
+						flex-direction: column;
+					}
+
+					&__bottom {
+						display: flex;
+					}
+				}
+			}
+
+			& .about {
+				margin: 5rem 2rem;
+
+				&__skills {
+					&__left {
+						&__web,
+						&__style,
+						&__graphism,
+						&__tools {
+							max-width: 100%;
+						}
+					}
+				}
+			}
+
+			& .projects,
+			& .contact {
+				margin: 5rem 2rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 599px) {
+		main {
+			& .home {
+				&__presentation {
+					&__top {
+						font-size: 3rem;
+					}
+				}
+			}
+
+			& .contact {
+				&__content {
+					&__left {
+						flex-direction: column;
+						gap: 1rem;
+
+						h3 {
+							font-size: 3rem;
+						}
+					}
+				}
 			}
 		}
 	}

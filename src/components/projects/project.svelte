@@ -96,4 +96,14 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 849px) {
+		.project {
+			margin: 0;
+
+			&__right {
+				display: none;
+			}
+		}
+	}
 </style>

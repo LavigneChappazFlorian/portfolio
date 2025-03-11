@@ -56,4 +56,13 @@
 			color: $dark-grey;
 		}
 	}
+
+	@media screen and (max-width: 599px) {
+		.link {
+			a {
+				padding: 0.5rem 1.5rem;
+				font-size: 1rem;
+			}
+		}
+	}
 </style>
