@@ -4,7 +4,7 @@
 	import '../lib/scss/main.scss';
 	import { fly } from 'svelte/transition';
 
-	let open = $state(false);
+	let open = $state(true);
 
 	type Props = {
 		children: Snippet;
@@ -130,15 +130,24 @@
 				}
 
 				&__menu {
+					position: relative;
 					z-index: 1;
 					display: flex;
 					align-items: center;
 
 					ul {
+						padding: 2rem;
+						position: absolute;
+						z-index: 1;
+						top: 100%;
+						left: 50%;
+						transform: translateX(-50%);
 						list-style: none;
 						display: flex;
 						flex-direction: column;
 						gap: 1rem;
+						background: $dark;
+						box-shadow: 0 0 20px 0 black;
 
 						li {
 							a {
