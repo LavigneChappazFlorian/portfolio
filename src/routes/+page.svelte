@@ -266,18 +266,13 @@
 
 				&__top h1,
 				&__bottom h1 {
-					font-family: 'Fira Code';
-					font-size: 7rem;
-					font-weight: bold;
-					color: $light;
+					@include text-style('Fira Code', 7rem, bold, $light);
 				}
 
 				&__bottom {
 					p {
-						font-family: 'Open Sans';
-						font-size: 1.1rem;
+						@include text-style('Open Sans', 1.1rem, 400, $dark-grey);
 						text-align: start;
-						color: $dark-grey;
 						max-width: 40%;
 
 						span {
@@ -304,10 +299,7 @@
 			gap: 2rem;
 
 			h2 {
-				color: $light;
-				font-family: 'Fira Code';
-				font-size: 0.9rem;
-				font-weight: 400;
+				@include text-style('Fira Code', 0.9rem, 400, $light);
 			}
 
 			&__skills {
@@ -320,6 +312,7 @@
 					flex-direction: column;
 					align-items: start;
 					gap: 1.5rem;
+					flex: 100%;
 
 					&__web {
 						max-width: 70%;
@@ -327,7 +320,6 @@
 
 					&__style,
 					&__tools {
-						//Voir comment styliser les composants
 						max-width: 70%;
 						display: flex;
 						flex-direction: row;
@@ -341,9 +333,7 @@
 
 					&__tools {
 						p {
-							color: $dark-grey;
-							font-family: 'Open Sans';
-							font-size: 1rem;
+							@include text-style('Open Sans', 1rem, 400, $dark-grey);
 							text-align: start;
 
 							span {
@@ -358,6 +348,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: end;
+					width: 100%;
 
 					img {
 						border-radius: 2rem;
@@ -372,9 +363,7 @@
 				margin: 0;
 
 				h3 {
-					color: $light;
-					font-family: 'Fira Code';
-					font-size: 5rem;
+					@include text-style('Fira Code', 5rem, bold, $light);
 					text-align: end;
 				}
 			}
@@ -414,10 +403,7 @@
 			margin: 5rem;
 
 			h2 {
-				color: $light;
-				font-family: 'Fira Code';
-				font-size: 0.9rem;
-				font-weight: 400;
+				@include text-style('Fira Code', 0.9rem, 400, $light);
 				text-align: end;
 			}
 
@@ -433,18 +419,14 @@
 					align-items: center;
 					justify-items: start;
 					gap: 2.5rem;
+					flex: 100%;
 
 					p {
-						font-family: 'Open Sans';
-						font-size: 1.25rem;
-						color: $dark-grey;
+						@include text-style('Open Sans', 1.25rem, 400, $dark-grey);
 					}
 
 					h3 {
-						font-family: 'Fira Code';
-						font-size: 7rem;
-						font-weight: bold;
-						color: $light;
+						@include text-style('Fira Code', 7rem, bold, $light);
 					}
 				}
 
@@ -453,6 +435,7 @@
 					align-items: center;
 					justify-content: end;
 					max-width: 50%;
+					width: 100%;
 				}
 			}
 
@@ -462,6 +445,23 @@
 				align-items: center;
 				justify-content: center;
 				gap: 2rem;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1300px) and (max-width: 1599px) {
+		main {
+			& .about {
+				&__skills {
+					&__left {
+						&__web,
+						&__style,
+						&__graphism,
+						&__tools {
+							max-width: 100%;
+						}
+					}
+				}
 			}
 		}
 	}

@@ -87,6 +87,7 @@
 			align-items: center;
 			justify-content: end;
 			gap: 0.5rem;
+			width: 100%;
 
 			img {
 				border-radius: 2rem;

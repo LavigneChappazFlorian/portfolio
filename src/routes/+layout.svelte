@@ -57,6 +57,12 @@
 
 <style lang="scss">
 	header {
+		position: sticky;
+		top: 0;
+		background: $dark;
+		padding: .25rem;
+		box-shadow: 0 0 10px black;
+
 		& .nav {
 			margin: 1.5rem;
 			display: flex;
@@ -121,8 +127,10 @@
 		}
 	}
 
-	@media screen and (max-width: 599px) {
+	@media screen and (max-width: 849px) {
 		header {
+			padding: 5px;
+
 			& .nav {
 				&__center,
 				&__right {
@@ -151,6 +159,7 @@
 
 						li {
 							a {
+								white-space: nowrap;
 								text-decoration: none;
 								font-size: 1rem;
 								color: $light;
