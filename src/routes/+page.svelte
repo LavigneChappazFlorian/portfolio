@@ -9,13 +9,13 @@
 	export let works = [
 		{
 			years: '2024',
-			time: '2 mois',
+			time: 'Stage - 2 mois',
 			compagny: 'ACFM Impression',
 			role: 'Graphiste | Suite Adobe'
 		},
 		{
 			years: '2020',
-			time: '1 semaine',
+			time: 'Stage - 1 semaine',
 			compagny: 'Xeler Informatique',
 			role: 'Informaticien | Réseau | OS'
 		}
@@ -143,7 +143,7 @@
 			</div>
 			<div class="home__presentation__bottom">
 				<p>
-					Hello 👋, je m'appelle <span>Florian</span> et je suis actuellement en deuxième année de
+					Hello 👋, je m'appelle <span>Florian Lavigne Chappaz</span> et je suis actuellement en deuxième année de
 					<span>Bachelor 'Développement Web & IA'</span>. J'aime explorer de
 					<span>nouvelles choses</span>
 					et je suis passionné par <span>les innovations technologiques</span> et
