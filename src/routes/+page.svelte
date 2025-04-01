@@ -23,14 +23,37 @@
 
 	export let projects = [
 		{
+			title: 'PopCornFlix',
+			description:
+				"Lors de ce projet collaboratif, mon rôle était de réaliser la partie Front-End de l'application web en utilisant le principe des composants ainsi que de gérer l'affiche des données venant de l'API REST \"TheMovieDB\".",
+			goal: "Le but de ce projet était de réaliser une application web de films en React en utilisant l'API REST \"TheMovieDB\".",
+			skills: ['HTML', 'CSS', 'JS', 'REACT', 'VITEJS', "Git"],
+			links: [
+				{
+					link: 'https://github.com/LavigneChappazFlorian/popcornflix',
+					icon: 'mingcute:github-fill'
+				},
+				{
+					link: 'https://popcornflix-project.netlify.app',
+					icon: 'bi:arrow-right'
+				}
+			],
+			picture: [
+				{
+					src: '/img/popcornflix/logo-popcornflix.webp',
+					alt: 'Logo PopCornFlix'
+				}
+			]
+		},
+		{
 			title: 'Samu Social de Paris',
 			description:
 				"Lors de ce projet collaboratif pour le Samu Social de Paris, mon rôle était de programmer une partie de l'interface de l'application Web Mobile tout en respectant les maquettes et la charte graphique données.",
 			goal: 'Le but de ce projet était de travailler la coordination entre développeurs et designers avec des outils collaboratifs comme Figma ou Git.',
-			skills: ['HTML', 'CSS', 'Figma', 'GIT'],
+			skills: ['HTML', 'CSS', 'Figma', 'Git'],
 			links: [
 				{
-					link: 'https://github.com/LavigneChappazFlorian',
+					link: 'https://github.com/Descorsiers/Brief_creatif_SAMUSOCIALPARIS/tree/Florian',
 					icon: 'mingcute:github-fill'
 				}
 			],
@@ -38,25 +61,6 @@
 				{
 					src: '/img/samu-social-paris/illustration.png',
 					alt: 'Page Info - Samu Social de Paris'
-				}
-			]
-		},
-		{
-			title: 'Portfolio SCSS',
-			description:
-				'Ce projet individuel consiste à réaliser un portfolio en SCSS en y intégrant des animations et des barres de progressions.',
-			goal: "Le but de ce projet était de s'entraîner au SCSS en utilisant SASS et en faisant divers animations, tout en respectant la bonne hiérarchisation des fichiers.",
-			skills: ['HTML', 'SCSS', 'SASS', 'GIT'],
-			links: [
-				{
-					link: 'https://florian-scss-portfolio.netlify.app',
-					icon: 'bi:arrow-right'
-				}
-			],
-			picture: [
-				{
-					src: '/img/sass-portfolio/sass.png',
-					alt: 'Logo Sass'
 				}
 			]
 		},
@@ -164,8 +168,8 @@
 			<div class="about__skills__left">
 				<div class="about__skills__left__web">
 					<Skill
-						title={'Langages de programmation'}
-						skills={'HTML / JS / React / Vue / Svelte / PHP / Symfony / MySQL / C / Python'}
+						title={'Langages de programmation & No Code'}
+						skills={'HTML / CMS / JS / React / ViteJS / Vue / Svelte / PHP / Symfony / MySQL / C / Python'}
 					/>
 				</div>
 				<div class="about__skills__left__style">
