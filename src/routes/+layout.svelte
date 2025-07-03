@@ -22,6 +22,10 @@
 	<title>Portfolio | Florian Lavigne Chappaz</title>
 </svelte:head>
 
+<div class="banner">
+	<span>Important ! Un nouveau portfolio est en cours de développement, il sera disponible prochainement.</span>
+</div>
+
 <header>
 	<nav class="nav">
 		<div class="nav__left">
@@ -56,6 +60,12 @@
 {@render children()}
 
 <style lang="scss">
+	.banner {
+		background: $light;
+		color: $dark;
+		padding: 1rem;
+		text-align: center;
+	}
 	header {
 		position: sticky;
 		top: 0;

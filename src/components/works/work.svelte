@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let years: string;
 	export let time: string;
-	export let compagny: string;
+	export let company: string;
 	export let role: string;
 </script>
 
@@ -11,7 +11,7 @@
 		<small>{time}</small>
 	</div>
 	<div class="work__right">
-		<span>{compagny}</span>
+		<span>{company}</span>
 		<span>{role}</span>
 	</div>
 </div>

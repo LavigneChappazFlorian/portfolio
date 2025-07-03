@@ -8,20 +8,45 @@
 
 	export let works = [
 		{
+			years: '2025',
+			time: 'Stage - 3 mois',
+			company: 'Maintners',
+			role: 'Développeur Web & Application'
+		},
+		{
 			years: '2024',
 			time: 'Stage - 2 mois',
-			compagny: 'ACFM Impression',
+			company: 'ACFM Impression',
 			role: 'Graphiste | Suite Adobe'
 		},
 		{
 			years: '2020',
 			time: 'Stage - 1 semaine',
-			compagny: 'Xeler Informatique',
+			company: 'Xeler Informatique',
 			role: 'Informaticien | Réseau | OS'
 		}
 	];
 
 	export let projects = [
+		{
+			title: 'Maint-IA',
+			description:
+				"Lors de mon stage chez Maintners, j'ai réalisé un site commercial pour un outil interne, en utilisant Next.js et Javascript. J'ai intégré l'API REST Furious Squad et veillé à la cohérence de l'interface utilisateur avec la charte graphique et le template donnés par l'entreprise.",
+			goal: "Le but de ce projet était de concevoir une plateforme web moderne et performante pour valoriser un outil interne, tout en renforçant mes compétences en développement avec Next.js et l'intégration d'API externes.",
+			skills: ['JS', 'REACT', 'Next.js', 'Tailwind CSS', 'Furious Squad', "Git", "Jira"],
+			links: [
+				{
+					link: 'https://maint-ia.com/',
+					icon: 'bi:arrow-right'
+				}
+			],
+			picture: [
+				{
+					src: '/img/maintners/maintners-logo.png',
+					alt: 'Logo Maint-IA'
+				}
+			]
+		},
 		{
 			title: 'PopCornFlix',
 			description:
@@ -117,7 +142,7 @@
 		},
 		{
 			icon: 'mdi:user',
-			link: '/cv/lavigne-chappaz-florian-cv-stage-alternance.pdf',
+			link: '/cv/lavigne-chappaz-florian-cv-alternance.pdf',
 			name: 'CV'
 		},
 		{
@@ -147,7 +172,7 @@
 			</div>
 			<div class="home__presentation__bottom">
 				<p>
-					Hello 👋, je m'appelle <span>Florian Lavigne Chappaz</span> et je suis actuellement en deuxième année de
+					Hello 👋, je m'appelle <span>Florian Lavigne Chappaz</span> et je suis actuellement en troisième année de
 					<span>Bachelor 'Développement Web & IA'</span>. J'aime explorer de
 					<span>nouvelles choses</span>
 					et je suis passionné par <span>les innovations technologiques</span> et
@@ -190,7 +215,7 @@
 						Voici quelques uns des <span>principaux outils</span> que j'utilise au
 						<span>quotidien</span>
 					</p>
-					<Skill title={'Outils'} skills={'Docker / Figma / Git / NodeJS / NPM / NPX / VSCode'} />
+					<Skill title={'Outils'} skills={'Docker / Figma / Git / Jira / NodeJS / NPM / NPX / VSCode'} />
 				</div>
 			</div>
 			<div class="about__skills__right">
