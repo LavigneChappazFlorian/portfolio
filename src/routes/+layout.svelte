@@ -40,10 +40,6 @@
 				<li><a href="#contact" aria-label="contact">Contact</a></li>
 			</ul>
 		</div>
-		<div class="nav__right">
-			<span id="en">En</span>
-			<span class="isActive" id="fr">Fr</span>
-		</div>
 		<div class="nav__menu">
 			<Hamburger bind:open ariaControls="nav" type="collapse" --color="white" />
 			{#if open}
@@ -111,26 +107,6 @@
 				}
 			}
 
-			&__right {
-				display: flex;
-				flex-direction: row;
-				gap: 1rem;
-
-				span {
-					position: relative;
-					color: $light;
-					cursor: pointer;
-				}
-
-				span.isActive {
-					border-bottom: 1px solid $light;
-				}
-
-				span:hover {
-					border-bottom: 1px solid $light;
-				}
-			}
-
 			&__menu {
 				display: none;
 			}
@@ -142,8 +118,7 @@
 			padding: 5px;
 
 			& .nav {
-				&__center,
-				&__right {
+				&__center {
 					display: none;
 				}
 
